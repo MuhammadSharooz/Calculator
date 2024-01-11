@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="cal">
+            <div class="head">
+                <div class="row">
+                    <div class="standard"><i class="fa-solid fa-bars"></i>Standard</div>
+                    <div class="standard timer"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                </div>
+                <div class="input"></div>
+                <div class="text">0</div>
+            </div>
+            <div class="body">
+                <div class="row1">
+                    <div class="box" onclick="display('%')">%</div>
+                    <div class="box" onclick="clr()">C</div>
+                    <div class="box" onclick="delt()"><i class="fa-solid fa-delete-left"></i></div>
+                    <div class="box" onclick="display('/')"><i class="fa-solid fa-divide"></i></div>
+                </div>
+                <div class="row1">
+                    <div class="box" onclick="display('7')">7</div>
+                    <div class="box" onclick="display('8')">8</div>
+                    <div class="box" onclick="display('9')">9</div>
+                    <div class="box" onclick="display('*')"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="row1">
+                    <div class="box" onclick="display('4')">4</div>
+                    <div class="box" onclick="display('5')">5</div>
+                    <div class="box" onclick="display('6')">6</div>
+                    <div class="box" onclick="display('-')"><i class="fa-solid fa-minus"></i></div>
+                </div>
+                <div class="row1">
+                    <div class="box" onclick="display('1')">1</div>
+                    <div class="box" onclick="display('2')">2</div>
+                    <div class="box" onclick="display('3')">3</div>
+                    <div class="box" onclick="display('+')"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="row1">
+                    <div class="box" onclick="display('00')">00</div>
+                    <div class="box" onclick="display('0')">0</div>
+                    <div class="box" onclick="display('.')"><b>.</b></div>
+                    <div class="box equal" onclick="equal()"><i class="fa-solid fa-equals"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
